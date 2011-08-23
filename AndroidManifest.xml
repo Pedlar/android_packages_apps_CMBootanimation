@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyanogenmod.cmbootanimation">
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+
+    <application android:label="@string/app_name" android:icon="@drawable/cm_icon">
+      <receiver android:name=".mvsduiReceiver" android:exported="true" android:enabled="true">
+        <intent-filter>
+          <action android:name="com.cyanogenmod.cmbootanimation.MOVE_BOOTANIMATION"></action>
+        </intent-filter>
+      </receiver>
+      <receiver android:name=".rmuiReceiver" android:exported="true" android:enabled="true">
+        <intent-filter>
+          <action android:name="com.cyanogenmod.cmbootanimation.RESET_DEFAULT"></action>
+        </intent-filter>
+      </receiver>
+    </application>
+</manifest>

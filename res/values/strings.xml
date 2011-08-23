@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generic -->
+    <string name="app_name">CyanogenMod bootnimation helper</string>
+    <string name="move_ui">Sucessfully moved file to boot animation.</string>
+    <string name="remove_ui">Reset boot animation back to default.</string>
+</resources>
